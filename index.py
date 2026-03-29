@@ -1,7 +1,7 @@
 import tkinter as tk
 
 def criar_janela():
-    contagem = [0]  # lista para poder modificar dentro da função
+    contagem = [0]
 
     def ao_clicar():
         contagem[0] += 1
@@ -16,13 +16,6 @@ def criar_janela():
 
     botao = tk.Button(janela, text="Clique aqui!", command=ao_clicar, font=("Arial", 14))
     botao.pack()
-
-    def resetar():
-        contagem[0] = 0
-        label.config(text="Cliques: 0")
-
-    botao_reset = tk.Button(janela, text="Resetar", command=resetar, font=("Arial", 14))
-    botao_reset.pack(pady=5)
 
     janela.mainloop()
 
