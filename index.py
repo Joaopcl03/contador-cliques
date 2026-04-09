@@ -1,7 +1,7 @@
 import tkinter as tk
 
 def criar_janela():
-    contagem = [0]  # lista para poder modificar dentro da função
+    contagem = [0]
 
     def ao_clicar():
         contagem[0] += 1
